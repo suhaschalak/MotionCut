@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>registration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h2>REGISTRATION FORM</h2>
+
+    <div class="form-container">
+        <form>
+
+            <!-- user name -->
+            <div class="input-form">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="enter first name" class="name">
+
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="enter last name" class="name">
+                </span>
+            </div>
+
+            <!-- email -->
+            <div class="input-form">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="enter email id" class="text-name">
+            </div>
+
+            <!-- password1 -->
+            <div class="input-form">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="enter password" class="text-name">
+            </div>
+
+            <!-- password2 -->
+            <div class="input-form">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="enter confirm password" class="text-name">
+            </div>
+
+            <!-- radio -->
+            <div class="input-form">
+                <input type="radio" name="gender" class="radio-btn">
+                <label style="margin-right:25px">male</label>
+
+                <input type="radio" name="gender" class="radio-btn">
+                <label>female</label>
+            </div>
+
+            <!-- inputs -->
+            <div class="input-form">
+                <select class="country">
+                    <option>select country</option>
+                    <option>india</option>
+                    <option>usa</option>
+                    <option>ua</option>
+                    <option>japan</option>
+                    <option>thailand</option>
+                    <option>china</option>
+                    <option>uk</option>
+                </select>
+                <div class="arrow"></div>
+            </div>
+
+            <!-- terms -->
+            <div class="input-form">
+                <input type="checkbox" id="cb" class="check-btn">
+                <label for="cb" class="check-lbl">I accept Terms and Condtions</label>
+            </div>
+
+            <!-- submit button -->
+            <div class="input-form">
+                <input type="submit" class="submit-btn">
+                
+            </div>
+
+        </form>
+    </div>
+   </div>
+</body>
+</html>
