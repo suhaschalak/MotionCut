@@ -1,0 +1,545 @@
+:root{
+    --green:green;
+    --black:black;
+    --light-color:#666;
+    --verylight-color:#d2cdcd;
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0.1);
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition:all 0.1s linear;
+    /* overflow:hidden; */
+}
+
+html{
+    font-size:60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+header{
+    border:0px solid;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 9%;
+    background:white;
+    box-shadow: var(--box-shadow);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(sneakerbackgrnd.jpeg);
+}
+
+header .icon{
+    color:white;
+    font-weight: bolder;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .icon img{
+    height:6rem;
+    width:10rem;
+}
+header .icon span{
+    color:rgb(144, 144, 214);
+    font-size:2.5rem;
+
+} 
+/* header .logo i{
+    color: var(--green);
+} */
+
+header nav a{
+    font-size:1.7rem;
+    margin:0 1rem;
+    color:var(--verylight-color);
+}
+
+header nav a:hover{
+    color: blue;
+}
+
+header .icons div{
+    height:4rem;
+    width:4rem;
+    line-height:4rem;
+    border-radius:.5rem;
+    text-align:center;
+    background:var(--verylight-color);
+    font-size: 2rem;
+    margin-right:.5rem;
+    cursor: pointer;
+}
+
+header .icons div:hover{
+    background:var(--green);
+    color:white;
+}
+
+#menu-btn{
+    display:none;
+}
+
+header nav.active{
+    right:2rem;
+    transition:.4s linear;
+}
+header .search-form{
+    border:2px solid rgb(0, 47, 128);
+    position:absolute;
+    top:110%;
+    right:-110%;
+    height:4.5rem;
+    width:40rem;
+    border-radius:5px;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    padding:0 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+header .search-form.active{
+    right:1rem;
+    transition:.3s linear;
+}
+
+header .search-form input{
+    height:100%;
+    width:100%;
+    font-size:1.7rem;
+    background: none;
+    text-transform:none;
+}
+
+header .search-form label{
+    font-size:2rem;
+    cursor: pointer;
+}
+
+header .search-form label:hover{
+    color:green;
+}
+
+header .shopping-cart img{
+    height:80px;
+    width:100px;
+}
+
+header .shopping-cart{
+    border:2px solid green;
+    position:absolute;
+    top:110%;
+    right:-110%;
+    padding:1rem;
+    border-radius:2px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    
+}
+
+header .shopping-cart .box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+}
+
+header .shopping-cart .box .content{
+    padding:0 5rem 0 1rem;
+} 
+
+header .shopping-cart .box i{
+    font-size:2rem;
+    cursor:pointer;
+    color:rgb(41, 41, 52);
+}
+
+header .shopping-cart .total{
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight:bolder;
+}
+
+.btn{
+    height:4rem;
+    width:10rem;
+    color:navy;
+    /* margin:1rem 5rem 0 9rem; */
+    /* align-items:center; */
+    border:2px solid black;
+    cursor: pointer;
+    background: rgb(79, 79, 119);
+    margin-bottom: 2rem;
+}
+
+.btn:hover{
+    background:rgb(144, 144, 214);
+}
+
+header .shopping-cart.active{
+    right:1rem;
+    transition:.3s linear;
+}
+
+/* login-form */
+header .login-form{
+    border:2px solid green;
+    position:absolute;
+    top:110%;
+    right:-110%;
+    padding:1rem;
+    border-radius:2px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    text-align:center;
+    width:40rem;
+} 
+
+header .login-form h3{
+    font-size:2rem;
+    text-transform: uppercase;
+}
+
+header .login-form .box{
+    border:2px solid black;
+    border-radius:3px;
+    margin:0.6rem 0;
+    font-size:1.rem;
+    padding:1rem 1rem;
+    background:rgb(221, 221, 232);
+    width:100%;
+}
+
+header .login-form p,a{
+    font-size:1.2rem;
+}
+
+header .login-form a{
+    font-weight: bolder;
+    font-size: 1.5rem;
+} 
+
+header .login-form.active{
+    right:1rem;
+    transition:.3s linear;
+}
+
+
+/* section */
+.sproduct{
+    display:flex;
+    width:100rem;
+    margin:2rem auto;
+    padding-top:15rem;
+    display:flex;
+    background:#d2cdcd;
+}
+
+.left{
+    width:50%;
+}
+
+.big-img{
+    width:50rem;
+}
+
+.big-img .img{
+    width:inherit;
+}
+
+.images{
+    display:flex;
+    justify-content: space-between;
+    width:65%;
+    margin-top: 2rem;
+}
+
+.small-img{
+    width:8rem;
+}
+
+.small-img img{
+    width:inherit;
+    cursor: pointer;
+}
+
+.small-img img:hover{
+    border:2px solid black;
+}
+
+
+.sproduct .row .column2{
+    width:50%;
+} 
+
+.column2 h1{
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+
+.column2 ul{
+    list-style: none;
+    display:flex;
+    margin-bottom:.2rem;
+}
+
+.column2 ul .star{
+    color:gold;
+}
+
+.column2 h2{
+    color:navy;
+    margin-bottom: 2rem;
+}
+
+.column2 span{
+    color:black;
+    text-decoration: line-through;
+}
+.column2 h3{
+    margin-top: 2rem;
+}
+.column2 p{
+   margin-bottom: 0;
+}
+
+.column2 h4,p{
+    font-size:1.5rem;
+    font-weight:200;
+    margin-bottom: 2rem;
+}
+
+.column2 .options{
+   display:flex;
+   }
+
+.column2 .options .option{
+    height:3rem;
+    width:3rem;
+    margin:0 .2rem;
+}
+
+.column2 .options .option1{
+    background-color:rgb(34, 181, 200);
+}
+
+.column2 .options .option2{
+    background-color:grey;
+}
+
+.column2 .options .option3{
+    background-color:black;
+}
+
+.column2 .options .option4{
+    background-color:white;
+}
+
+
+.column2 input{
+    width:3rem;
+    margin-bottom: 1rem;
+
+}
+
+.btn1{
+    background:#666 ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    html{
+        font-size:55%;
+    }
+    header{
+        padding:2rem;
+    
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display:inline-block;
+    }
+    header nav{
+        position:absolute;
+        top:110%;
+        right:-110%;
+        width:30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    header nav a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display:block;
+        color:#333;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size:50%;
+    }
+}
+
+@media (max-width:330px) {
+    header .search-form{
+        width:30rem;
+    }
+    
+}
+
+@media (max-width:315px) {
+    .sproduct{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    header {
+        padding: 2rem 5%;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+    }
+
+    header .icons div {
+        font-size: 1.5rem;
+    }
+
+    
+
+    .sproduct {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10rem;
+    }
+
+    .left,
+    .big-img,
+    .images {
+        width: 100%;
+    }
+
+    .big-img,
+    .images {
+        margin-top: 1rem;
+    }
+
+    .small-img {
+        width: 6rem;
+    }
+
+    .column2 {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .column2 h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .column2 ul {
+        font-size: 1.3rem;
+    }
+
+    .column2 h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .column2 h3,
+    .column2 p {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .column2 .options .option {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .column2 input {
+        width: 2rem;
+    }
+
+    .btn1 {
+        font-size: 1.5rem;
+    }
+}
